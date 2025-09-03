@@ -16,7 +16,7 @@ app.set('view engine', 'ejs');
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(express.static("public"));
 
-mongoose.connect("mongodb://localhost:27017/bloggingDB", {useNewUrlParser: true});
+-e MONGO_URI=mongodb://host.docker.internal:27017/bloggingDB
 
 
 const postSchema = {
