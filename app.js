@@ -1,9 +1,5 @@
 //jshint esversion:6
 
-process.on('unhandledRejection', (err) => {
-  console.error('UNHANDLED PROMISE REJECTION:', err);
-  process.exit(1); // Stop the app if any promise fails silently
-});
 const express = require("express");
 const bodyParser = require("body-parser");
 const ejs = require("ejs");
